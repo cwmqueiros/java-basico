@@ -1,8 +1,6 @@
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-import org.omg.PortableInterceptor.SYSTEM_EXCEPTION;
-
 public class DivideByZeroWithExceptionHandling {
 
     public static int quotient(int numerator, int denominator) throws ArithmeticException {
@@ -12,7 +10,6 @@ public class DivideByZeroWithExceptionHandling {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
-
         boolean continueLoop = true;
 
         do {
@@ -40,6 +37,8 @@ public class DivideByZeroWithExceptionHandling {
             }
 
         } while (continueLoop);
+
+        scanner.close();
 
     }
 }
